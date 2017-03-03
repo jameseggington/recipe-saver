@@ -1,10 +1,9 @@
 export default {
   path: "/",
-  indexRoute: require('./Home').default,
-  getComponent: function(nextState, callback){
-    require.ensure([], function(require){
-      callback(null, require("./../App").default);
-    });
-  },
-  childRoutes: []
+  indexRoute: "home",
+  component: require('./../App').default,
+  childRoutes: [
+    { path: "home", component: require('./Home').default },
+    { path: "recipe/:id", component: require('./Recipe').default }
+  ]
 };

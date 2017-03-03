@@ -3,3 +3,19 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+
+h1, h2, h3, h4, h5 {
+  margin: 0px;
+}
+
+.recipe-list-recipe {
+  padding-bottom: 15px;
+}
+
+.section {
+  margin-bottom: 15px;
+}
+
+.recipe-list {
+  margin-left: -25px;
+}
